@@ -20,6 +20,8 @@ application {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.5.0'
+    compile "org.apache.poi:poi:3.9"	     // For `.xls` files
+    compile "org.apache.poi:poi-ooxml:3.9"	 // For `.xlsx` files
 }
 
 run {

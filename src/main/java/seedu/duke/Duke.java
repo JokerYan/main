@@ -2,8 +2,11 @@ package seedu.duke;
 
 import seedu.duke.command.Command;
 import seedu.duke.command.ExitCommand;
+import seedu.duke.excel.ExcelReader;
 
 import java.util.Scanner;
+
+import static seedu.duke.excel.ExcelReader.printTitles;
 
 /**
  * The main class of the program, which provides the entry point.
@@ -19,6 +22,7 @@ public class Duke {
      */
     public static void main(String[] args) {
         ui = new UI();
+        printTitles();
         run();
     }
 
